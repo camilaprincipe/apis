@@ -1,6 +1,16 @@
-function personajeRandom () { 
+// darle funcionalidad al botón para que cargue a los personaes cuando se hace click
+        document.addEventListener("DOMContentLoaded", function() {
+           
+            personajeRandom();
+            const btn = document.getElementById("random");
+            btn.addEventListener('click', personajeRandom);
+          });
+        
+            function personajeRandom () { 
             const url = 'https://harry-potter-api.onrender.com/personajes';
-        // Realizar una solicitud GET a la API
+        
+        
+            // Realizar una solicitud GET a la API
         fetch(url)
             .then(response => {
                 // Verificar si la respuesta es exitosa (código de estado 200)
@@ -45,10 +55,4 @@ function personajeRandom () {
             });
         }
 
-// darle funcionalidad al botón para que cargue a los personaes cuando se hace click
-        document.addEventListener("DOMContentLoaded", function() {
-            const btn = document.getElementById("random");
-            btn.addEventListener('click', personajeRandom);
-          });
-        
-            
+
