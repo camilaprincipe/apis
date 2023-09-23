@@ -1,7 +1,5 @@
-
-
-        const url = 'https://harry-potter-api.onrender.com/personajes';
-
+function personajeRandom () { 
+            const url = 'https://harry-potter-api.onrender.com/personajes';
         // Realizar una solicitud GET a la API
         fetch(url)
             .then(response => {
@@ -45,6 +43,12 @@
                 // Manejar cualquier error que pueda ocurrir durante la solicitud
                 console.error('Error:', error);
             });
+        }
 
-
+// darle funcionalidad al botón para que cargue a los personaes cuando se hace click
+        document.addEventListener("DOMContentLoaded", function() {
+            const btn = document.getElementById("random");
+            btn.addEventListener('click', personajeRandom);
+          });
+        
             

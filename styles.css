@@ -1,7 +1,7 @@
 body {
     display: flex;
-    flex-direction: column; /* Apila elementos verticalmente */
-    justify-content: space-between; /* Distribuye elementos en el espacio vertical */
+    flex-direction: column; 
+    justify-content: space-between; 
     align-items: center;
     height: 100vh;
     margin: 0;
@@ -9,22 +9,19 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    color: white; /* Cambia el color del texto para que sea legible en el fondo */
-    background: url('harry.jpg') no-repeat center center fixed; /* Ruta relativa a la imagen */
+    color: white; 
+    background: url('harry.jpg') no-repeat center center fixed;
     background-size: cover;
-
-    
 }
 
-/* Establece márgenes para el h1 */
+
 h1 {
     font-size: 50px; 
     margin: 50;
-    
 }
                                             
 p {
-    margin: 10px 0; /* Espacio arriba y abajo para los párrafos */
+    margin: 10px 0; 
     text-align: center;
 }
 
@@ -47,4 +44,11 @@ p {
 
 }
 
-
+#random {
+    font-family:  'Harry Potter', sans-serif;
+    margin-bottom: 50px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+ 
+}
